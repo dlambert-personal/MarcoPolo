@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  marcopolloapi:
+    image: ${DOCKER_REGISTRY-}marcopoloapi
+    build:
+      context: .
+      dockerfile: MarcoPoloAPI/Dockerfile
